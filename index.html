@@ -1,0 +1,132 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RigStrike — IFTA in 15 Minutes, Not 5 Hours | Free IFTA Calculator</title>
+<meta name="description" content="Free IFTA calculator with official Q2 2026 diesel rates, plus the RigStrike app coming Q4: automatic GPS state tracking, audit protection, and fuel-tax optimization. Join the waitlist.">
+<link rel="canonical" href="https://rigstrike.com/">
+<meta property="og:title" content="RigStrike — IFTA in 15 minutes, not 5 hours">
+<meta property="og:description" content="Free IFTA calculator now. Automatic GPS-based IFTA app coming Q4.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RigStrike",
+  "url": "https://rigstrike.com/",
+  "description": "IFTA fuel tax tools for truckers — free calculator now, automatic GPS-based IFTA app coming Q4 2026."
+}
+</script>
+
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" href="./">RIG<b>STRIKE</b></a>
+  <nav class="nav">
+    <a href="calculator/">Calculator</a>
+    <a href="ifta-due-dates/">Due Dates</a>
+    <a href="#waitlist">Waitlist</a>
+  </nav>
+</div></header>
+
+<main>
+  <section class="hero"><div class="wrap">
+    <p class="eyebrow">Built for owner-operators &amp; small fleets</p>
+    <h1>IFTA in 15 minutes,<br>not 5 hours.</h1>
+    <p class="sub">Use the free IFTA calculator right now — official Q2 2026 diesel rates, all the math done for you.
+      And the RigStrike app is coming Q4: <strong>automatic GPS state tracking</strong>, <strong>audit protection</strong>,
+      and a <strong>fuel-tax optimizer</strong> that tells you where to buy.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="calculator/">Use the free calculator</a>
+      <a class="btn btn-ghost" href="#waitlist">Join the waitlist</a>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Auto GPS tracking</h3>
+        <p class="muted">Your phone logs miles by state automatically. No paper logs, no guessing at the quarter's end.</p>
+      </div>
+      <div class="card">
+        <h3>Audit protection</h3>
+        <p class="muted">Clean, timestamped records for every trip and every fuel receipt — ready if an auditor ever asks.</p>
+      </div>
+      <div class="card">
+        <h3>Fuel-tax optimizer</h3>
+        <p class="muted">See where fuel is cheapest after tax, so you buy in the states that lower your IFTA bill.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section" id="waitlist"><div class="wrap">
+    <div class="card" style="max-width:560px;margin:0 auto">
+      <h2 style="margin-top:0">Get the app before the Q4 deadline</h2>
+      <p class="muted">Drop your email and we'll notify you the moment RigStrike launches. No spam.</p>
+      <form id="waitlist-form" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <!-- honeypot: real users never fill this -->
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary" type="submit">Join the waitlist</button>
+        <p id="wl-msg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="cta-block">
+      <h2>Free calculator, no signup</h2>
+      <p>Run your quarter through the free IFTA calculator right now — it works on your phone in the cab.</p>
+      <a class="btn btn-primary" href="calculator/">Open the calculator</a>
+    </div>
+  </div></section>
+</main>
+
+<footer class="site-foot"><div class="wrap">
+  <span>© 2026 RigStrike</span>
+  <span><a href="calculator/">Calculator</a> · <a href="ifta-due-dates/">Due dates</a> · <a href="privacy/">Privacy</a></span>
+</div></footer>
+
+<script>
+(function () {
+  var form = document.getElementById("waitlist-form");
+  var msg = document.getElementById("wl-msg");
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    msg.className = "form-msg";
+    msg.textContent = "";
+    var email = document.getElementById("email").value.trim();
+    var company = form.querySelector('input[name="company"]').value; // honeypot
+    if (!EMAIL_RE.test(email)) {
+      msg.className = "form-msg err";
+      msg.textContent = "Please enter a valid email address.";
+      return;
+    }
+    var btn = form.querySelector("button");
+    btn.disabled = true; btn.textContent = "Adding you…";
+    fetch("/api/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email, company: company })
+    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        if (res.ok) {
+          msg.className = "form-msg ok";
+          msg.textContent = "You're on the list. We'll email you before the Q4 deadline.";
+          form.reset();
+        } else {
+          msg.className = "form-msg err";
+          msg.textContent = (res.d && res.d.error) || "Something went wrong. Please try again.";
+        }
+      })
+      .catch(function () {
+        msg.className = "form-msg err";
+        msg.textContent = "Network error. Please try again.";
+      })
+      .finally(function () { btn.disabled = false; btn.textContent = "Join the waitlist"; });
+  });
+})();
+</script>

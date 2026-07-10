@@ -1,0 +1,259 @@
+{
+  "quarter": "Q2 2026",
+  "period": "April 1 - June 30, 2026",
+  "return_due": "2026-07-31",
+  "fuel_type": "Special Diesel",
+  "source": "https://www.iftach.org/taxmatrix/charts/2Q2026.csv",
+  "source_page": "https://www.iftach.org/taxmatrix4/TaxDownload.php",
+  "fetched": "2026-07-10",
+  "currency": "USD",
+  "notes": [
+    "Rates are the official IFTA, Inc. 'Special Diesel' rates for US member jurisdictions, Q2 2026.",
+    "Oregon (OR) has a $0.0000 IFTA diesel rate; Oregon taxes heavy vehicles via a separate weight-mile tax.",
+    "Indiana (IN) diesel surcharge is $0.0000 for Q2 2026: the former surcharge was folded into the base rate ($0.6300).",
+    "Kentucky (KY) and Virginia (VA) impose a separate diesel surcharge with NO credit for fuel purchased.",
+    "Alaska, Hawaii, and the District of Columbia are not IFTA member jurisdictions and are excluded."
+  ],
+  "jurisdictions": {
+    "AL": {
+      "name": "Alabama",
+      "rate": 0.31,
+      "surcharge": 0.0
+    },
+    "AR": {
+      "name": "Arkansas",
+      "rate": 0.285,
+      "surcharge": 0.0
+    },
+    "AZ": {
+      "name": "Arizona",
+      "rate": 0.26,
+      "surcharge": 0.0
+    },
+    "CA": {
+      "name": "California",
+      "rate": 0.971,
+      "surcharge": 0.0
+    },
+    "CO": {
+      "name": "Colorado",
+      "rate": 0.325,
+      "surcharge": 0.0
+    },
+    "CT": {
+      "name": "Connecticut",
+      "rate": 0.489,
+      "surcharge": 0.0
+    },
+    "DE": {
+      "name": "Delaware",
+      "rate": 0.22,
+      "surcharge": 0.0
+    },
+    "FL": {
+      "name": "Florida",
+      "rate": 0.4097,
+      "surcharge": 0.0
+    },
+    "GA": {
+      "name": "Georgia",
+      "rate": 0.373,
+      "surcharge": 0.0
+    },
+    "IA": {
+      "name": "Iowa",
+      "rate": 0.325,
+      "surcharge": 0.0
+    },
+    "ID": {
+      "name": "Idaho",
+      "rate": 0.32,
+      "surcharge": 0.0
+    },
+    "IL": {
+      "name": "Illinois",
+      "rate": 0.738,
+      "surcharge": 0.0
+    },
+    "IN": {
+      "name": "Indiana",
+      "rate": 0.63,
+      "surcharge": 0.0
+    },
+    "KS": {
+      "name": "Kansas",
+      "rate": 0.26,
+      "surcharge": 0.0
+    },
+    "KY": {
+      "name": "Kentucky",
+      "rate": 0.22,
+      "surcharge": 0.105
+    },
+    "LA": {
+      "name": "Louisiana",
+      "rate": 0.2,
+      "surcharge": 0.0
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "rate": 0.24,
+      "surcharge": 0.0
+    },
+    "MD": {
+      "name": "Maryland",
+      "rate": 0.4675,
+      "surcharge": 0.0
+    },
+    "ME": {
+      "name": "Maine",
+      "rate": 0.312,
+      "surcharge": 0.0
+    },
+    "MI": {
+      "name": "Michigan",
+      "rate": 0.524,
+      "surcharge": 0.0
+    },
+    "MN": {
+      "name": "Minnesota",
+      "rate": 0.326,
+      "surcharge": 0.0
+    },
+    "MO": {
+      "name": "Missouri",
+      "rate": 0.295,
+      "surcharge": 0.0
+    },
+    "MS": {
+      "name": "Mississippi",
+      "rate": 0.21,
+      "surcharge": 0.0
+    },
+    "MT": {
+      "name": "Montana",
+      "rate": 0.2975,
+      "surcharge": 0.0
+    },
+    "NC": {
+      "name": "North Carolina",
+      "rate": 0.41,
+      "surcharge": 0.0
+    },
+    "ND": {
+      "name": "North Dakota",
+      "rate": 0.23,
+      "surcharge": 0.0
+    },
+    "NE": {
+      "name": "Nebraska",
+      "rate": 0.318,
+      "surcharge": 0.0
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "rate": 0.222,
+      "surcharge": 0.0
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "rate": 0.561,
+      "surcharge": 0.0
+    },
+    "NM": {
+      "name": "New Mexico",
+      "rate": 0.21,
+      "surcharge": 0.0
+    },
+    "NV": {
+      "name": "Nevada",
+      "rate": 0.27,
+      "surcharge": 0.0
+    },
+    "NY": {
+      "name": "New York",
+      "rate": 0.3805,
+      "surcharge": 0.0
+    },
+    "OH": {
+      "name": "Ohio",
+      "rate": 0.47,
+      "surcharge": 0.0
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "rate": 0.19,
+      "surcharge": 0.0
+    },
+    "OR": {
+      "name": "Oregon",
+      "rate": 0.0,
+      "surcharge": 0.0
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "rate": 0.741,
+      "surcharge": 0.0
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "rate": 0.4,
+      "surcharge": 0.0
+    },
+    "SC": {
+      "name": "South Carolina",
+      "rate": 0.28,
+      "surcharge": 0.0
+    },
+    "SD": {
+      "name": "South Dakota",
+      "rate": 0.28,
+      "surcharge": 0.0
+    },
+    "TN": {
+      "name": "Tennessee",
+      "rate": 0.27,
+      "surcharge": 0.0
+    },
+    "TX": {
+      "name": "Texas",
+      "rate": 0.2,
+      "surcharge": 0.0
+    },
+    "UT": {
+      "name": "Utah",
+      "rate": 0.379,
+      "surcharge": 0.0
+    },
+    "VA": {
+      "name": "Virginia",
+      "rate": 0.327,
+      "surcharge": 0.143
+    },
+    "VT": {
+      "name": "Vermont",
+      "rate": 0.31,
+      "surcharge": 0.0
+    },
+    "WA": {
+      "name": "Washington",
+      "rate": 0.584,
+      "surcharge": 0.0
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "rate": 0.329,
+      "surcharge": 0.0
+    },
+    "WV": {
+      "name": "West Virginia",
+      "rate": 0.357,
+      "surcharge": 0.0
+    },
+    "WY": {
+      "name": "Wyoming",
+      "rate": 0.24,
+      "surcharge": 0.0
+    }
+  }
+}

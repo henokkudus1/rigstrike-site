@@ -1,0 +1,90 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free IFTA Calculator 2026 — Diesel Fuel Tax by State | RigStrike</title>
+<meta name="description" content="Free IFTA calculator using official Q2 2026 diesel rates. Enter miles and gallons per state to estimate your quarterly IFTA fuel tax due — including KY & VA surcharges. Runs in your browser.">
+<link rel="canonical" href="https://rigstrike.com/calculator/">
+<meta property="og:title" content="Free IFTA Calculator 2026 | RigStrike">
+<meta property="og:description" content="Estimate your quarterly IFTA diesel fuel tax with official Q2 2026 rates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "RigStrike Free IFTA Calculator",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (web browser)",
+  "url": "https://rigstrike.com/calculator/",
+  "description": "Free IFTA fuel tax calculator using official Q2 2026 diesel rates for all US IFTA member jurisdictions.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" href="../">RIG<b>STRIKE</b></a>
+  <nav class="nav">
+    <a href="../calculator/">Calculator</a>
+    <a href="../ifta-due-dates/">Due Dates</a>
+    <a href="../#waitlist">Waitlist</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <section class="section">
+    <p class="eyebrow">Free tool</p>
+    <h1>IFTA Calculator</h1>
+    <p class="muted" id="rates-stamp">Loading official rates…</p>
+
+    <div class="disclaimer">
+      <strong>Estimates only — not tax advice.</strong> This tool gives a good-faith estimate using the
+      official IFTA, Inc. Q2 2026 diesel rate matrix. Always verify against the official IFTA rate matrix
+      and your base jurisdiction's instructions before filing your return.
+    </div>
+
+    <form id="calc-form">
+      <div id="calc-rows" class="calc-rows"></div>
+      <div style="margin-top:16px">
+        <button type="button" id="add-state" class="btn btn-ghost">+ Add state</button>
+      </div>
+    </form>
+
+    <h2>Your estimate</h2>
+    <div id="results" class="card"><p class="muted">Add at least one state to see your estimate.</p></div>
+  </section>
+
+  <section class="section">
+    <h2>How this math works</h2>
+    <p>IFTA settles fuel tax across every state you drove in, based on <em>where you burned the fuel</em>, not
+      where you bought it. The formula the calculator runs:</p>
+    <ul class="plain">
+      <li><strong>Fleet MPG</strong> = total miles ÷ total gallons purchased (across all states).</li>
+      <li><strong>Taxable gallons</strong> for a state = that state's miles ÷ your fleet MPG. This is the fuel you
+        <em>burned</em> in that state.</li>
+      <li><strong>Net taxable gallons</strong> = taxable gallons − gallons you actually <em>bought</em> in that state.
+        Positive means you owe; negative means you already paid too much there (a credit).</li>
+      <li><strong>Tax</strong> = net taxable gallons × that state's diesel rate.</li>
+      <li><strong>Surcharge (KY &amp; VA):</strong> surcharge = <em>taxable</em> gallons × the surcharge rate, added on
+        top. There is no purchase credit against a surcharge — you pay it on every gallon burned there.</li>
+      <li><strong>Net total</strong> = the sum of every state's tax and surcharge. A negative net total is an
+        overall credit.</li>
+    </ul>
+    <p class="small muted">Note for Q2 2026: Indiana no longer has a separate diesel surcharge — it was folded
+      into Indiana's base diesel rate. Oregon's IFTA diesel rate is $0.00 (Oregon uses a separate weight-mile tax).</p>
+  </section>
+
+  <div class="cta-block">
+    <h2>Stop doing this by hand</h2>
+    <p>RigStrike tracks your state-by-state miles automatically from GPS and fills in the fuel tax math for you —
+      with audit protection and fuel-tax optimization. Coming Q4.</p>
+    <a class="btn btn-primary" href="../#waitlist">Join the waitlist</a>
+  </div>
+</main>
+
+<footer class="site-foot"><div class="wrap">
+  <span>© 2026 RigStrike</span>
+  <span><a href="../ifta-due-dates/">Due dates</a> · <a href="../privacy/">Privacy</a> · <a href="../">Home</a></span>
+</div></footer>
+
+<script src="../app.js"></script>
