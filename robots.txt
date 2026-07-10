@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rigstrike.com/sitemap.xml
+Sitemap: https://rigstrike-site.vercel.app/sitemap.xml

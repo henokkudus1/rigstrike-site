@@ -1,14 +1,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('rs-theme')||'auto';var d=t==='auto'?((window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'):t;document.documentElement.setAttribute('data-theme',d);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <title>Free IFTA Calculator 2026 — Diesel Fuel Tax by State | RigStrike</title>
 <meta name="description" content="Free IFTA calculator using official Q2 2026 diesel rates. Enter miles and gallons per state to estimate your quarterly IFTA fuel tax due — including KY & VA surcharges. Runs in your browser.">
-<link rel="canonical" href="https://rigstrike.com/calculator/">
+<link rel="canonical" href="https://rigstrike-site.vercel.app/calculator/">
 <meta property="og:title" content="Free IFTA Calculator 2026 | RigStrike">
 <meta property="og:description" content="Estimate your quarterly IFTA diesel fuel tax with official Q2 2026 rates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
+<script src="../theme.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -16,7 +18,7 @@
   "name": "RigStrike Free IFTA Calculator",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Any (web browser)",
-  "url": "https://rigstrike.com/calculator/",
+  "url": "https://rigstrike-site.vercel.app/calculator/",
   "description": "Free IFTA fuel tax calculator using official Q2 2026 diesel rates for all US IFTA member jurisdictions.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
@@ -24,11 +26,14 @@
 
 <header class="site-head"><div class="wrap">
   <a class="wordmark" href="../">RIG<b>STRIKE</b></a>
-  <nav class="nav">
-    <a href="../calculator/">Calculator</a>
-    <a href="../ifta-due-dates/">Due Dates</a>
-    <a href="../#waitlist">Waitlist</a>
-  </nav>
+  <div class="head-right">
+    <nav class="nav">
+      <a href="../calculator/">Calculator</a>
+      <a href="../ifta-due-dates/">Due Dates</a>
+      <a href="../#waitlist">Waitlist</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme"></button>
+  </div>
 </div></header>
 
 <main class="wrap">

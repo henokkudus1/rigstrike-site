@@ -1,14 +1,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('rs-theme')||'auto';var d=t==='auto'?((window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'):t;document.documentElement.setAttribute('data-theme',d);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <title>IFTA Due Dates 2026 — All Four Quarterly Deadlines | RigStrike</title>
 <meta name="description" content="IFTA due dates for 2026: all four quarterly filing deadlines, the zero-report rule, and answers to common IFTA filing questions. File on time even with no miles.">
-<link rel="canonical" href="https://rigstrike.com/ifta-due-dates/">
+<link rel="canonical" href="https://rigstrike-site.vercel.app/ifta-due-dates/">
 <meta property="og:title" content="IFTA Due Dates 2026 | RigStrike">
 <meta property="og:description" content="All four 2026 IFTA quarterly deadlines plus the zero-report rule.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
+<script src="../theme.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -40,11 +42,14 @@
 
 <header class="site-head"><div class="wrap">
   <a class="wordmark" href="../">RIG<b>STRIKE</b></a>
-  <nav class="nav">
-    <a href="../calculator/">Calculator</a>
-    <a href="../ifta-due-dates/">Due Dates</a>
-    <a href="../#waitlist">Waitlist</a>
-  </nav>
+  <div class="head-right">
+    <nav class="nav">
+      <a href="../calculator/">Calculator</a>
+      <a href="../ifta-due-dates/">Due Dates</a>
+      <a href="../#waitlist">Waitlist</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme"></button>
+  </div>
 </div></header>
 
 <main class="wrap">
@@ -58,10 +63,10 @@
     <table class="data-table">
       <thead><tr><th>Quarter</th><th>Period covered</th><th>Filing deadline</th></tr></thead>
       <tbody>
-        <tr><td>Q1 2026</td><td>Jan 1 – Mar 31, 2026</td><td>April 30, 2026</td></tr>
-        <tr><td>Q2 2026</td><td>Apr 1 – Jun 30, 2026</td><td>July 31, 2026</td></tr>
-        <tr><td>Q3 2026</td><td>Jul 1 – Sep 30, 2026</td><td>November 2, 2026 <span class="small muted">(Oct 31 is a Saturday)</span></td></tr>
-        <tr><td>Q4 2026</td><td>Oct 1 – Dec 31, 2026</td><td>February 2, 2027 <span class="small muted">(Jan 31 is a Saturday)</span></td></tr>
+        <tr><td><span class="chip chip-orange">Q1 2026</span></td><td>Jan 1 – Mar 31, 2026</td><td>April 30, 2026</td></tr>
+        <tr><td><span class="chip chip-orange">Q2 2026</span></td><td>Apr 1 – Jun 30, 2026</td><td>July 31, 2026</td></tr>
+        <tr><td><span class="chip chip-orange">Q3 2026</span></td><td>Jul 1 – Sep 30, 2026</td><td>November 2, 2026 <span class="small muted">(Oct 31 is a Saturday)</span></td></tr>
+        <tr><td><span class="chip chip-orange">Q4 2026</span></td><td>Oct 1 – Dec 31, 2026</td><td>February 2, 2027 <span class="small muted">(Jan 31 is a Saturday)</span></td></tr>
       </tbody>
     </table>
 

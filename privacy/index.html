@@ -1,21 +1,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('rs-theme')||'auto';var d=t==='auto'?((window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'):t;document.documentElement.setAttribute('data-theme',d);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <title>Privacy — RigStrike</title>
 <meta name="description" content="RigStrike privacy policy: the IFTA calculator runs entirely in your browser and stores nothing. The waitlist stores only your email, only to notify you at launch. We never sell your data.">
-<link rel="canonical" href="https://rigstrike.com/privacy/">
+<link rel="canonical" href="https://rigstrike-site.vercel.app/privacy/">
 <meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
+<script src="../theme.js" defer></script>
 
 <header class="site-head"><div class="wrap">
   <a class="wordmark" href="../">RIG<b>STRIKE</b></a>
-  <nav class="nav">
-    <a href="../calculator/">Calculator</a>
-    <a href="../ifta-due-dates/">Due Dates</a>
-    <a href="../#waitlist">Waitlist</a>
-  </nav>
+  <div class="head-right">
+    <nav class="nav">
+      <a href="../calculator/">Calculator</a>
+      <a href="../ifta-due-dates/">Due Dates</a>
+      <a href="../#waitlist">Waitlist</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme"></button>
+  </div>
 </div></header>
 
 <main class="wrap">

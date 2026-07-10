@@ -1,31 +1,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('rs-theme')||'auto';var d=t==='auto'?((window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'):t;document.documentElement.setAttribute('data-theme',d);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <title>RigStrike — IFTA in 15 Minutes, Not 5 Hours | Free IFTA Calculator</title>
 <meta name="description" content="Free IFTA calculator with official Q2 2026 diesel rates, plus the RigStrike app coming Q4: automatic GPS state tracking, audit protection, and fuel-tax optimization. Join the waitlist.">
-<link rel="canonical" href="https://rigstrike.com/">
+<link rel="canonical" href="https://rigstrike-site.vercel.app/">
 <meta property="og:title" content="RigStrike — IFTA in 15 minutes, not 5 hours">
 <meta property="og:description" content="Free IFTA calculator now. Automatic GPS-based IFTA app coming Q4.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="theme.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "RigStrike",
-  "url": "https://rigstrike.com/",
+  "url": "https://rigstrike-site.vercel.app/",
   "description": "IFTA fuel tax tools for truckers — free calculator now, automatic GPS-based IFTA app coming Q4 2026."
 }
 </script>
 
 <header class="site-head"><div class="wrap">
   <a class="wordmark" href="./">RIG<b>STRIKE</b></a>
-  <nav class="nav">
-    <a href="calculator/">Calculator</a>
-    <a href="ifta-due-dates/">Due Dates</a>
-    <a href="#waitlist">Waitlist</a>
-  </nav>
+  <div class="head-right">
+    <nav class="nav">
+      <a href="calculator/">Calculator</a>
+      <a href="ifta-due-dates/">Due Dates</a>
+      <a href="#waitlist">Waitlist</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme"></button>
+  </div>
 </div></header>
 
 <main>

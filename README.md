@@ -42,5 +42,5 @@ npm test          # math + subscribe missing-key path
 ## Deploy
 Static site + `/api` serverless functions deploy directly on Vercel. Set the env vars above first.
 
-> **Note:** `https://rigstrike.com` is used as the canonical/sitemap domain placeholder. Update it across the
+> **Note:** `https://rigstrike-site.vercel.app` is used as the canonical/sitemap domain placeholder. Update it across the
 > HTML `<link rel="canonical">`, JSON-LD `url`s, `sitemap.xml`, and `robots.txt` once the real domain is set.
