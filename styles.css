@@ -82,11 +82,13 @@ a:hover{text-decoration:underline}
   .head-right{gap:10px}
   .theme-toggle .tt-label{display:none}
 }
-@media(max-width:400px){
+@media(max-width:560px){
   .site-head .wrap{flex-wrap:wrap;min-height:0;padding-top:8px;padding-bottom:8px}
   .head-right{width:100%;justify-content:space-between;margin-top:2px}
-  .wordmark{font-size:1.25rem}
-  .nav{gap:10px;font-size:.8rem}
+}
+@media(max-width:400px){
+  .wordmark{font-size:1.2rem}
+  .nav{gap:9px;font-size:.78rem}
 }
 
 /* ---- BUTTONS ---- */
@@ -185,6 +187,29 @@ input:focus,select:focus{outline:none;border-color:var(--orange)}
 .site-foot .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
 .site-foot a{color:var(--muted)}
 .site-foot a:hover{color:var(--text)}
+
+/* ---- BLOG ---- */
+.post-list{display:grid;gap:16px;margin-top:8px}
+@media(min-width:720px){.post-list{grid-template-columns:1fr 1fr}}
+.post-card{display:block;color:var(--body);text-decoration:none}
+.post-card:hover{text-decoration:none;border-color:var(--orange)}
+.post-card h3{margin:0 0 .3em}
+.post-card p{margin:0 0 .7em;color:var(--muted)}
+.post-card .readmore{color:var(--orange);font-weight:500;font-size:.9rem}
+.post-meta{color:var(--muted);font-size:.85rem;margin:0 0 18px}
+.article{max-width:720px}
+.article h2{font-size:clamp(1.35rem,4.5vw,1.8rem)}
+.article .lead{font-size:1.15rem}
+.article ul.plain li,.article p{color:var(--body)}
+.worked{background:var(--card);border:.5px solid var(--border);border-radius:12px;padding:6px 16px 14px;margin:18px 0}
+.worked h4{font-family:"Barlow Semi Condensed",sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.4px;font-size:1rem;margin:14px 0 6px;color:var(--text)}
+.worked .tablescroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0}
+.worked table{width:100%;border-collapse:collapse;font-size:.9rem}
+.worked th,.worked td{padding:7px 8px;border-bottom:.5px solid var(--border);text-align:right;white-space:nowrap}
+.worked th:first-child,.worked td:first-child{text-align:left}
+.worked thead th{color:var(--muted);font-weight:500;font-size:.8rem;text-transform:uppercase;letter-spacing:.4px}
+.worked .win{color:var(--green);font-weight:500}
+.example-tag{display:inline-block;border-radius:6px;padding:2px 8px;font-size:.75rem;font-weight:500;background:var(--amber-bg);color:var(--amber);text-transform:uppercase;letter-spacing:.5px}
 
 /* ---- UTILITIES ---- */
 .muted{color:var(--muted)}
