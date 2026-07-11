@@ -1,0 +1,15 @@
+{
+  "updated": "2026-07-11",
+  "note": "Official IFTA diesel rates, one file per quarter. New quarters are added here when IFTA, Inc. publishes the official matrix; the RigStrike app fetches this index on launch and downloads any newer file automatically (no App Store review). Q3 2026 will be added once its official matrix is published (IFTA lists it as not final until 2026-09-04).",
+  "quarters": [
+    {
+      "key": "2026-Q2",
+      "quarter": "Q2 2026",
+      "file": "2026-Q2.json",
+      "period": "April 1 - June 30, 2026",
+      "return_due": "2026-07-31",
+      "source": "https://www.iftach.org/taxmatrix/charts/2Q2026.csv",
+      "fetched": "2026-07-10"
+    }
+  ]
+}
