@@ -12,10 +12,10 @@
   --orange-chip-bg:#2A1608; --btn2-border:#33373C;
 }
 [data-theme="light"]{
-  --bg:#F7F7F5; --card:#FFFFFF; --border:#E4E3DE; --border-sub:#EFEEE9;
-  --text:#0B0D0F; --body:#0B0D0F; --muted:#888780;
+  --bg:#E9E7E0; --card:#F3F1EB; --border:#D8D5CC; --border-sub:#E2DFD7;
+  --text:#0B0D0F; --body:#0B0D0F; --muted:#67655D;
   --orange:#E8620C; --on-orange:#FFFFFF;
-  --green:#1D9E75; --green-bg:#E1F5EE; --green-border:#9FE1CB;
+  --green:#12744F; --green-bg:#DDEEE4; --green-border:#9FE1CB;
   --red:#A32D2D; --red-bg:#FCEBEB; --red-border:#F7C1C1;
   --amber:#854F0B; --amber-bg:#FAEEDA; --amber-border:#FAC775;
   --orange-chip-bg:#FAECE7; --btn2-border:#C9C8C2;
